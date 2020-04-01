@@ -19,7 +19,7 @@ class Song
       new_song = self.new(song)
       
 
-      return new_song
+      
 
     end
 
