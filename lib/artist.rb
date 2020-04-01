@@ -28,9 +28,6 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    #if a artist has name
-    #else create one if doesnt exist
-    #return will be an instance of an artist
     artist = @@all.find {|artist| artist.name == name} || Artist.new(name)
     return artist
   end
