@@ -30,12 +30,9 @@ class Song
       # either we have to create that artist instance, OR it already exists
       # and we have to find that artist instance
       self.artist = Artist.find_or_create_by_name(name)
+      artist.add_song(self)
 
       binding.pry
     end
-
-
-
-
 
 end
