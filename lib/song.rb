@@ -27,8 +27,10 @@ class Song
     def artist_name= (name)
       # turn the artist name as a string into an Artist object
       # get the instance of the Artist class that represent that artist
-      # either we have to creat that artist instance, OR it already exists
+      # either we have to create that artist instance, OR it already exists
       # and we have to find that artist instance
+      self.artist = Artist.find_or_create_by_name(name)
+      
       binding.pry
     end
 
