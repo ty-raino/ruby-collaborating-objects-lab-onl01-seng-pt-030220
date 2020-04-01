@@ -15,6 +15,7 @@ class MP3Importer
 
     def import
       files.collect do |files|
+        file.new_by_filename
 
     end
 
