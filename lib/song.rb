@@ -14,7 +14,7 @@ class Song
 
     def self.new_by_filename
       Song.new_by_filename(name).each do |n|
-        n.artist_name
+        n.name
       end
     end
 
