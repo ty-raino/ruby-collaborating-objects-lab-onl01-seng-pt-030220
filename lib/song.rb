@@ -20,7 +20,7 @@ class Song
 
       new_song = self.new(song)
       new_song.artist_name = artist
-      
+
 
     end
 
@@ -30,7 +30,7 @@ class Song
       # either we have to create that artist instance, OR it already exists
       # and we have to find that artist instance
       self.artist = Artist.find_or_create_by_name(name)
-      
+
       binding.pry
     end
 
