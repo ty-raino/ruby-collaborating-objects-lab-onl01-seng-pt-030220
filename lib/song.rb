@@ -15,16 +15,21 @@ class Song
     end
 
     def self.new_by_filename(file)
-      # song = file.split(" - ")[1]
-      # artist = file.split(" - ")[0]
+      song = file.split(" - ")[1]
+      artist = file.split(" - ")[0]
 
-      # new_song = self.new(song)
-      #new_song.artist_name = artist
-      binding.pry
+      new_song = self.new(song)
+      new_song.artist_name = artist
+      
 
     end
 
     def artist_name= (name)
+      # turn the artist name as a string into an Artist object
+      # get the instance of the Artist class that represent that artist
+      # either we have to creat that artist instance, OR it already exists
+      # and we have to find that artist instance
+      binding.pry
     end
 
 
